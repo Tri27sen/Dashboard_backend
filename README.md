@@ -89,24 +89,24 @@ finance_backend/
 ### 2. Installation
 
 ```bash
-# Clone or download the project
+# Clone the repository
+git clone https://github.com/Tri27sen/Dashboard_backend.git
+
+# Move into the project directory
 cd finance_backend
 
-# Create virtual environment
-python -m venv venv
+# Install dependencies (Pipenv)
+pipenv install
 
 # Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
+pipenv shell
 
-# Install dependencies
-pip install -r requirements.txt
+# Run database migrations
+python manage.py migrate
 
-# Create .env file (optional, for secrets)
-cp .env.example .env
-```
+# Run the development server
+python manage.py runserver
+
 
 ### 3. Database Setup
 
