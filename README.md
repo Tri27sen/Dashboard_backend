@@ -340,7 +340,7 @@ Test coverage includes:
 - Transaction CRUD operations
 - Analytics calculation correctness
 - Input validation
-- Error handling
+
 
 ## Running with Different Configurations
 
